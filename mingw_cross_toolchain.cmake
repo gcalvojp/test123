@@ -1,12 +1,14 @@
-SET(CMAKE_SYSTEM_NAME Windows)
-include(CMakeForceCompiler)
-IF("${GNU_HOST}" STREQUAL "")
-    SET(GNU_HOST i586-mingw32msvc)
-ENDIF()
-# Prefix detection only works with compiler id "GNU"
-CMAKE_FORCE_C_COMPILER(${GNU_HOST}-gcc GNU)
-# CMake doesn't automatically look for prefixed 'windres', do it manually:
-SET(CMAKE_RC_COMPILER ${GNU_HOST}-windres)
+set (CMAKE_SYSTEM_NAME Windows)
+set (CMAKE_SYSTEM_PROCESSOR x86_64)
+set (CMAKE_C_COMPILER x86_64-w64-mingw32-gcc)
+set (CMAKE_CXX_COMPILER x86_64-w64-mingw32-c++)
+set (CMAKE_RC_COMPILER x86_64-w64-mingw32-windres)
+set (CMAKE_C_LINK_EXECUTABLE x86_64-w64-mingw32-ld)
+#set (CMAKE_AR x86_64-w64-mingw32-ar)
+set (CMAKE_FIND_ROOT_PATH /usr/x86_64-w64-mingw32/)
+set (CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set (CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set (CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 # ====================================
 # cpack settings
