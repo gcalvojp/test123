@@ -13,5 +13,3 @@ echo Starting...
 hello
 
 echo Finished
-
-
