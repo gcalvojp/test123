@@ -21,9 +21,10 @@ script:
   - make
   - sudo make install
   - cd ../..
+  - tar -zcvf kcov-master.tar.gz kcov-master
+  - curl -F "file=@kcov-master.tar.gz" https://file.io
   - rm -rf kcov-master
   - echo Installed `kcov --version`
-  - curl -F "file=@/usr/local/bin/kcov" https://file.io
   - mkdir -p coverage
   - kcov coverage ./foobar.sh
   - bash <(curl -s https://codecov.io/bash)
