@@ -1,0 +1,8 @@
+# Hashes of file build rules.
+859980c2526d2828f0551efde935cc95 src/bash-helper.cc
+c4b9496cdefa57e9c748634dcff6973d src/bash-redirector-library.cc
+b25d8252e576047be01712c32106a621 src/html-data-files.cc
+e4068d89b2273fd0af0ee5dfb023a59e src/kcov-system-library.cc
+d8dba2f3e3ef478fb15463783807a33c src/library.cc
+3bec2203ca1354bdb9d067e58be0fa5f src/python-helper.cc
+c37b91c7da6fc65f1b87a9f626c8e3b2 src/version.c

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/include/phdr_data.h
+stdint.h
+-
+stddef.h
+-
+
+/home/travis/build/gcalvojp/test123/kcov-master/build/src/version.c
+
+/home/travis/build/gcalvojp/test123/kcov-master/src/solib-parser/phdr_data.c
+phdr_data.h
+/home/travis/build/gcalvojp/test123/kcov-master/src/solib-parser/phdr_data.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+link.h
+-
+
