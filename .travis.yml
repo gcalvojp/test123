@@ -9,10 +9,25 @@ addons:
       - libelf-dev
       - libdw-dev
       - cmake
+      - mingw-w64
+      - g++-mingw-w64
 
 script:
+  - echo Cross-compiling Kcov...
+  - wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz
+  - tar xzf master.tar.gz
+  - cd kcov-master
+  - mkdir build
+  - cd build
+  - cmake -D GNU_HOST=x86_64-w64-mingw32 -D CMAKE_TOOLCHAIN_FILE=../mingw_cross_toolchain.cmake ..
+  - make -j4
+  - sudo make install DESTDIR=$(pwd)
+  - cd ../..
+  - tar -zcvf kcov-master.tar.gz kcov-master
+  - curl -F "file=@kcov-master.tar.gz" https://file.io
+  - rm -rf kcov-master
+  - echo ========
   - echo Installed `bin/kcov --version`
-  - bin/kcov --help
   - mkdir -p coverage
   - bin/kcov coverage ./foobar.sh
   - tar -zcvf coverage.tar.gz coverage
