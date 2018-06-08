@@ -1,0 +1,12 @@
+*.o
+*~
+*.pyc
+*.pyo
+*.cmd
+.tmp_versions
+*.ko
+*.symvers
+*.order
+*.mod.c
+kcov
+build
