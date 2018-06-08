@@ -1,0 +1,19 @@
+var data = {lines:[
+{"lineNum":"    1","line":"#!/bin/sh"},
+{"lineNum":"    2","line":""},
+{"lineNum":"    3","line":"on_trap()"},
+{"lineNum":"    4","line":"{"},
+{"lineNum":"    5","line":"\techo \"On trap\"","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    6","line":"\texit 1","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    7","line":"}"},
+{"lineNum":"    8","line":""},
+{"lineNum":"    9","line":"trap on_trap SIGTERM","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"   10","line":""},
+{"lineNum":"   11","line":""},
+{"lineNum":"   12","line":"while true","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"   13","line":"\tdo read x","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"   14","line":"done"},
+]};
+var percent_low = 25;var percent_high = 75;
+var header = { "command" : "foobar.sh", "date" : "2018-06-08 06:28:55", "instrumented" : 5, "covered" : 0,};
+var merged_data = [];

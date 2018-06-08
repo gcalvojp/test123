@@ -1,0 +1,13 @@
+var data = {lines:[
+{"lineNum":"    1","line":"#/bin/sh"},
+{"lineNum":"    2","line":"eval \"(echo Stuff in subshell","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    3","line":"echo More stuff in subshell","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    4","line":"      ) \"","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    5","line":"echo \"Inbetween stuff\"","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    6","line":"(echo \"Other subshell\"","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    7","line":"echo More stuff in Other subshell","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    8","line":")","class":"lineNoCov","hits":"0","possible_hits":"0",},
+]};
+var percent_low = 25;var percent_high = 75;
+var header = { "command" : "foobar.sh", "date" : "2018-06-08 06:28:55", "instrumented" : 7, "covered" : 0,};
+var merged_data = [];

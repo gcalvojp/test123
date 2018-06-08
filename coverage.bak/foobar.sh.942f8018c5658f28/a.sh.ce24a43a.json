@@ -1,0 +1,15 @@
+var data = {lines:[
+{"lineNum":"    1","line":"#!/bin/sh"},
+{"lineNum":"    2","line":""},
+{"lineNum":"    3","line":"echo A second","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    4","line":""},
+{"lineNum":"    5","line":"if [ $1 = \"hej\" ] ; then","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    6","line":"\tsource `dirname $0`/c.sh","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    7","line":"fi"},
+{"lineNum":"    8","line":""},
+{"lineNum":"    9","line":"source `dirname $0`/b.sh","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"   10","line":""},
+]};
+var percent_low = 25;var percent_high = 75;
+var header = { "command" : "foobar.sh", "date" : "2018-06-08 06:28:55", "instrumented" : 4, "covered" : 0,};
+var merged_data = [];

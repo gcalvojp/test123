@@ -1,0 +1,15 @@
+var data = {lines:[
+{"lineNum":"    1","line":"file(REMOVE_RECURSE","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    2","line":"  \"CMakeFiles/bash_execve_redirector.dir/engines/bash-execve-redirector.c.o\"","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    3","line":"  \"libbash_execve_redirector.pdb\"","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    4","line":"  \"libbash_execve_redirector.so\"","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    5","line":")","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    6","line":""},
+{"lineNum":"    7","line":"# Per-language clean rules from dependency scanning."},
+{"lineNum":"    8","line":"foreach(lang C)","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    9","line":"  include(CMakeFiles/bash_execve_redirector.dir/cmake_clean_${lang}.cmake OPTIONAL)","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"   10","line":"endforeach()"},
+]};
+var percent_low = 25;var percent_high = 75;
+var header = { "command" : "foobar.sh", "date" : "2018-06-08 06:28:55", "instrumented" : 7, "covered" : 0,};
+var merged_data = [];

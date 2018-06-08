@@ -1,0 +1,6 @@
+var data = {lines:[
+{"lineNum":"    1","line":"/usr/bin/cc -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libkcov_sowrapper.so -o libkcov_sowrapper.so CMakeFiles/kcov_sowrapper.dir/solib-parser/phdr_data.c.o CMakeFiles/kcov_sowrapper.dir/solib-parser/lib.c.o -ldl","class":"lineNoCov","hits":"0","possible_hits":"0",},
+]};
+var percent_low = 25;var percent_high = 75;
+var header = { "command" : "foobar.sh", "date" : "2018-06-08 06:28:55", "instrumented" : 1, "covered" : 0,};
+var merged_data = [];

@@ -1,0 +1,13 @@
+var data = {lines:[
+{"lineNum":"    1","line":"# Hashes of file build rules."},
+{"lineNum":"    2","line":"859980c2526d2828f0551efde935cc95 src/bash-helper.cc","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    3","line":"c4b9496cdefa57e9c748634dcff6973d src/bash-redirector-library.cc","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    4","line":"b25d8252e576047be01712c32106a621 src/html-data-files.cc","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    5","line":"e4068d89b2273fd0af0ee5dfb023a59e src/kcov-system-library.cc","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    6","line":"d8dba2f3e3ef478fb15463783807a33c src/library.cc","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    7","line":"3bec2203ca1354bdb9d067e58be0fa5f src/python-helper.cc","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    8","line":"c37b91c7da6fc65f1b87a9f626c8e3b2 src/version.c","class":"lineNoCov","hits":"0","possible_hits":"0",},
+]};
+var percent_low = 25;var percent_high = 75;
+var header = { "command" : "foobar.sh", "date" : "2018-06-08 06:28:55", "instrumented" : 7, "covered" : 0,};
+var merged_data = [];

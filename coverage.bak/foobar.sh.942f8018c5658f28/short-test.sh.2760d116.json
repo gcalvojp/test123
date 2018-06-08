@@ -1,0 +1,11 @@
+var data = {lines:[
+{"lineNum":"    1","line":"#!/usr/bin/env bash"},
+{"lineNum":"    2","line":""},
+{"lineNum":"    3","line":"for f in 0 1 2 3 4 5 6 7 8 9 10","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    4","line":"do"},
+{"lineNum":"    5","line":"\techo $f","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    6","line":"done"},
+]};
+var percent_low = 25;var percent_high = 75;
+var header = { "command" : "foobar.sh", "date" : "2018-06-08 06:28:55", "instrumented" : 2, "covered" : 0,};
+var merged_data = [];
