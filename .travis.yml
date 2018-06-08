@@ -11,20 +11,10 @@ addons:
       - cmake
 
 script:
-  - echo Installing Kcov...
-  - wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz
-  - tar xzf master.tar.gz
-  - cd kcov-master
-  - mkdir build
-  - cd build
-  - cmake ..
-  - make
-  - sudo make install
-  - cd ../..
-  - tar -zcvf kcov-master.tar.gz kcov-master
-  - curl -F "file=@kcov-master.tar.gz" https://file.io
-  - rm -rf kcov-master
-  - echo Installed `kcov --version`
+  - echo Installed `bin/kcov --version`
+  - bin/kcov --help
   - mkdir -p coverage
   - kcov coverage ./foobar.sh
+  - tar -zcvf coverage.tar.gz coverage
+  - curl -F "file=@coverage.tar.gz" https://file.io
   - bash <(curl -s https://codecov.io/bash)
