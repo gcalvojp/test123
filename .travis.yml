@@ -17,6 +17,7 @@ script:
   - wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz
   - tar xzf master.tar.gz
   - cd kcov-master
+  - cp ../mingw_cross_toolchain.cmake .
   - mkdir build
   - cd build
   - cmake -D GNU_HOST=x86_64-w64-mingw32 -D CMAKE_TOOLCHAIN_FILE=../mingw_cross_toolchain.cmake ..
@@ -30,6 +31,4 @@ script:
   - echo Installed `bin/kcov --version`
   - mkdir -p coverage
   - bin/kcov coverage ./foobar.sh
-  - tar -zcvf coverage.tar.gz coverage
-  - curl -F "file=@coverage.tar.gz" https://file.io
   - bash <(curl -s https://codecov.io/bash)
