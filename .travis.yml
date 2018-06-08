@@ -14,7 +14,7 @@ script:
   - echo Installed `bin/kcov --version`
   - bin/kcov --help
   - mkdir -p coverage
-  - kcov coverage ./foobar.sh
+  - bin/kcov coverage ./foobar.sh
   - tar -zcvf coverage.tar.gz coverage
   - curl -F "file=@coverage.tar.gz" https://file.io
   - bash <(curl -s https://codecov.io/bash)
