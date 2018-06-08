@@ -1,0 +1,39 @@
+Usage: kcov [OPTIONS] out-dir in-file [args...]
+Where [OPTIONS] are
+ -h, --help              this text
+ --version               print the version of kcov
+ -p, --pid=PID           trace PID instead of executing in-file,
+                         in-file is optional on Linux in this case
+ -l, --limits=low,high   setup limits for low/high coverage (default 25,75)
+ --collect-only          Only collect coverage data (don't produce HTML/
+                         Cobertura output)
+ --report-only           Produce output from stored databases, don't collect
+ --merge                 Merge output from multiple source dirs
+ --include-path=path     comma-separated paths to include in the coverage report
+ --exclude-path=path     comma-separated paths to exclude from the coverage
+                         report
+ --include-pattern=pat   comma-separated path patterns to include in the
+                         coverage report
+ --exclude-pattern=pat   comma-separated path patterns to exclude from the 
+                         coverage report
+ --exclude-line=pat[,...] Consider lines that match the patterns to be non-
+                         code lines.
+ --exclude-region=start:stop[,...] Exclude regions of code between start:stop
+                         markers (e.g., within comments) as non-code lines.
+ --clean                 don't accumulate data from multiple runs
+ --coveralls-id=id       Travis CI job ID or secret repo_token for uploads to
+                         Coveralls.io
+ --strip-path=path       If not set, max common path will be stripped away.
+ --uncommon-options      print uncommon options for --help
+Examples:
+  kcov /tmp/kcov ./frodo                        # Check coverage for ./frodo
+  kcov --pid=1000 /tmp/kcov                     # Check coverage for PID 1000
+  kcov --include-pattern=/src/frodo/ /tmp/kcov ./frodo # Only include files
+                                                       # including /src/frodo
+  kcov --collect-only /tmp/kcov ./frodo  # Collect coverage, don't report
+  kcov --report-only /tmp/kcov ./frodo   # Report coverage collected above
+  kcov --merge /tmp/out /tmp/dir1 /tmp/dir2     # Merge the dir1/dir2 reports
+  kcov --system-record /tmp/out-dir sysroot     # Perform full-system in-
+                                                  strumentation for sysroot
+  kcov --system-report  /tmp/data-dir           # Report all data from a full-
+                                                  system run.
